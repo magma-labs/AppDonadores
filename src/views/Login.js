@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   },
   registrate: {
     fontSize: 15,
-    color: 'grey',
+    color: 'white',
   },
   link: {
     color: '#f8173a',
