@@ -12,7 +12,6 @@ export default class QuestionCard extends Component {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo conse
         </Text>
-        
       </View>
     );
   }
@@ -33,37 +32,37 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   numberQuestion: {
-    marginTop:30,
+    marginTop: 30,
     fontFamily: 'AcuminPro',
     fontSize: 20,
     textAlign: 'left',
     color: '#000000',
     alignItems: 'center',
   },
-  answer:{
+  answer: {
     width: 280,
-    marginTop:30,
-    fontFamily: "SegoeUI",
+    marginTop: 30,
+    fontFamily: 'SegoeUI',
     fontSize: 14,
-    fontWeight: "normal",
-    fontStyle: "normal",
+    fontWeight: 'normal',
+    fontStyle: 'normal',
     lineHeight: 19,
     letterSpacing: 0,
-    textAlign: "left",
-    justifyContent:'center',
-    color: "#000000"
+    textAlign: 'left',
+    justifyContent: 'center',
+    color: '#000000',
   },
-  button:{
-    color:'#ffffff',
-    fontSize:40,
+  button: {
+    color: '#ffffff',
+    fontSize: 40,
     width: 65,
     height: 65,
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    textAlign:'center',
-    borderRadius:130,
-    backgroundColor: "#ed1a3d",
-    padding:10
+    textAlign: 'center',
+    borderRadius: 130,
+    backgroundColor: '#ed1a3d',
+    padding: 10,
   },
 });
