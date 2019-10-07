@@ -11,11 +11,9 @@ export default class Login extends Component {
         <Logo />
         <LoginForm />
         <View style={styles.register}>
+          <Text style={styles.registrate}>Regístrate: </Text>
           <TouchableOpacity>
-            <Text>
-            <Text style={styles.registrate}>Regístrate: </Text>
             <Text style={styles.link}>www.donadorescompulsivos.org</Text>
-            </Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -45,6 +43,6 @@ const styles = StyleSheet.create({
   link: {
     color: '#f8173a',
     fontSize: 15,
-    textDecorationLine: "underline",
+    textDecorationLine: 'underline',
   },
 });
