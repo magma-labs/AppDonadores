@@ -18,26 +18,25 @@ export default class LoginForm extends Component {
     return (
       <View>
         <KeyboardAvoidingView behavior="padding" style={styles.container}>
-        <Text style={styles.textStyle}>Correo</Text>
-        <TextInput
-          style={styles.inputBox}
-          placeholderTextColor="#707070"
-          placeholder="user@example.com"
-          value={this.state.email}
-          onChangeText={email => this.setState({ email })}
-          
-        />
-        <Text style={styles.textStyle}>Contraseña</Text>
-        <TextInput
-          style={styles.inputBox}
-          placeholderTextColor="#707070"
-          secureTextEntry={true}
-          placeholder="Contraseña"
-          value={this.state.password}
-          onChangeText={password => this.setState({ password })}
-          
-        />
-       </KeyboardAvoidingView> 
+          <Text style={styles.textStyle}>Correo</Text>
+          <TextInput
+            style={styles.inputBox}
+            placeholderTextColor="#707070"
+            placeholder="user@example.com"
+            value={this.state.email}
+            onChangeText={email => this.setState({email})}
+          />
+
+          <Text style={styles.textStyle}>Contraseña</Text>
+          <TextInput
+            style={styles.inputBox}
+            placeholderTextColor="#707070"
+            secureTextEntry={true}
+            placeholder="Contraseña"
+            value={this.state.password}
+            onChangeText={password => this.setState({password})}
+          />
+        </KeyboardAvoidingView>
         <KeyboardAvoidingView behavior="padding" style={styles.containerButton}>
           <TouchableOpacity
             style={styles.button}
@@ -45,35 +44,30 @@ export default class LoginForm extends Component {
             <Text style={styles.buttonText}>Entrar</Text>
           </TouchableOpacity>
         </KeyboardAvoidingView>
-        </View>
-        
-      
+      </View>
     );
   }
 }
-
 
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'flex-start',
-    
   },
-  containerButton:{
-    alignItems:'center',
+  containerButton: {
+    alignItems: 'center',
     flexDirection: 'column',
     justifyContent: 'center',
-   
   },
-  textStyle:{
+  textStyle: {
     color: '#ffffff',
     flexDirection: 'column',
     fontSize: 20,
-    textAlign:'left',
+    textAlign: 'left',
   },
- 
-  inputBox: {  
+
+  inputBox: {
     width: 282,
     height: 47,
     backgroundColor: '#f0f0f0',
@@ -83,10 +77,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: '#000000',
     marginVertical: 10,
-    
   },
   button: {
-    
     width: 135,
     height: 52,
     backgroundColor: '#e12e4a',
@@ -94,7 +86,6 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     paddingVertical: 10,
     alignItems: 'center',
-
   },
   buttonText: {
     fontSize: 18,
@@ -106,5 +97,22 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: 'red',
     textAlign: 'center',
+  },
+  rectangulo: {
+    width: 282,
+    height: 47,
+    backgroundColor: 'red',
+    marginBottom: -105,
+    marginLeft: 5,
+    borderRadius: 5,
+  },
+  rectangulo2: {
+    marginTop: 60,
+    width: 282,
+    height: 47,
+    backgroundColor: 'red',
+    marginBottom: -105,
+    marginLeft: 5,
+    borderRadius: 5,
   },
 });
