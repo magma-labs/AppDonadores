@@ -1,11 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 export default class QuestionCard extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.numberQuestion}>Pregunta frecuente #1</Text>
+        <Text style={styles.numberQuestion}>
+          Pregunta frecuente #{this.props.Text}
+        </Text>
         <Text style={styles.answer}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

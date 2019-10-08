@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import {View, StyleSheet, Image, Text} from 'react-native';
-import QuestionCard from '../components/QuestionCard';
+import React, { Component } from 'react';
+import {View, StyleSheet, Image, Text, Dimensions} from 'react-native';
 import ButtonQuestion from './ButtonQuestion';
+import Carousel from './Carousel';
 
 export default class FAQCard extends Component {
   render() {
@@ -17,7 +17,7 @@ export default class FAQCard extends Component {
           source={require('../img/pic.png')}
         />
         <Text style={styles.textStyle}>¡Hola Usuario!</Text>
-        <QuestionCard />
+        <Carousel />
         <ButtonQuestion />
       </View>
     );
@@ -27,8 +27,8 @@ export default class FAQCard extends Component {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
-    height: 637,
-    width: '100%',
+    width: Dimensions.get('window').width,
+    height: 580,
     borderTopRightRadius: 80,
     borderTopLeftRadius: 80,
     flexDirection: 'column',
@@ -41,6 +41,5 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     alignItems: 'flex-start',
     fontWeight: 'bold',
-    marginBottom: 40,
   },
 });
