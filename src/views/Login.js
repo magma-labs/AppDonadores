@@ -1,11 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 import Logo from '../components/Logo';
 import LoginForm from '../components/LoginForm';
 
 export default class Login extends Component {
   render() {
-    debugger;
     return (
       <View style={styles.container}>
         <Logo />

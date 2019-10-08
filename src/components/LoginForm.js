@@ -12,7 +12,10 @@ import {BoxShadow} from 'react-native-shadow';
 export default class LoginForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {email: '', password: ''};
+    this.state = {
+      email: '',
+      password: '',
+    };
   }
 
   render() {
@@ -21,33 +24,33 @@ export default class LoginForm extends Component {
         <KeyboardAvoidingView behavior="padding" style={styles.container}>
           <Text style={styles.textStyle}>Correo</Text>
           <BoxShadow setting={shadowBoxInput}>
-          <TextInput
-            style={styles.inputBox}
-            placeholderTextColor="#707070"
-            placeholder="user@example.com"
-            value={this.state.email}
-            onChangeText={email => this.setState({email})}
-          />
+            <TextInput
+              style={styles.inputBox}
+              placeholderTextColor="#707070"
+              placeholder="user@example.com"
+              value={this.state.email}
+              onChangeText={email => this.setState({email})}
+            />
           </BoxShadow>
           <Text style={styles.textStyle}>Contraseña</Text>
           <BoxShadow setting={shadowBoxInput}>
-          <TextInput
-            style={styles.inputBox}
-            placeholderTextColor="#707070"
-            secureTextEntry={true}
-            placeholder="Contraseña"
-            value={this.state.password}
-            onChangeText={password => this.setState({password})}
-          />
+            <TextInput
+              style={styles.inputBox}
+              placeholderTextColor="#707070"
+              secureTextEntry={true}
+              placeholder="Contraseña"
+              value={this.state.password}
+              onChangeText={password => this.setState({password})}
+            />
           </BoxShadow>
         </KeyboardAvoidingView>
         <KeyboardAvoidingView behavior="padding" style={styles.containerButton}>
           <BoxShadow setting={shadowBoxButton}>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => this.logIn(this.state.email, this.state.password)}>
-            <Text style={styles.buttonText}>Entrar</Text>
-          </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.button}
+              onPress={() => this.logIn(this.state.email, this.state.password)}>
+              <Text style={styles.buttonText}>Entrar</Text>
+            </TouchableOpacity>
           </BoxShadow>
         </KeyboardAvoidingView>
       </View>
@@ -63,8 +66,8 @@ const shadowBoxInput = {
   opacity: 0,
   x: 3,
   y: 12,
-  style:{marginBottom:30}
-}
+  style: {marginBottom: 30},
+};
 const shadowBoxButton = {
   width: 134,
   height: 51,
@@ -74,7 +77,7 @@ const shadowBoxButton = {
   opacity: 0,
   x: 4,
   y: 14,
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -104,14 +107,14 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: '#000000',
     marginVertical: 10,
-    marginBottom:30
+    marginBottom: 30,
   },
   button: {
     width: 135,
     height: 52,
     backgroundColor: '#e12e4a',
     borderRadius: 5,
-    borderWidth:2,
+    borderWidth: 2,
     marginVertical: 10,
     paddingVertical: 10,
     alignItems: 'center',
