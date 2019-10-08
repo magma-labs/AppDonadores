@@ -12,7 +12,7 @@ export default class Logo extends Component {
             height: 100,
             resizeMode: 'contain',
           }}
-          source={require('../img/logo.png')}
+          source={require('../img/LogoDonadoresCompulsivosBlanco.png')}
         />
       </View>
     );
